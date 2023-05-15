@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <Title>Java Script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+      </section>
+      <section class="main-section" id="javascript_and_java">
+        <header>JavaScript and Java</header>
+        <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+<p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+<p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+      </section>
+      <section class="main-section" id="hello_world">
+        <header>Hello World</header>
+        <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }</code>
+<code>greetMe("World");</code>
+<p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+      </section>
+      <section class="main-section" id="constants">
+        <header>Constants</header>
+        <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+        <code>const PI = 3.14;</code>
+        <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+
+The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+
+You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+<code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+//statements }</code>
+<p>However, object attributes are not protected, so the following statement is executed without problems.</p>
+<code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+"otherValue";</code>
+      </section>
+      <section class="main-section" id="data_types">
+        <header>Data Types</header>
+        <p>The latest ECMAScript standard defines seven data types:</p1>
+        <ul style="list-style-type: circle;">
+<li>Boolean. true and false.</li>
+<li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+<li>undefined. A top-level property whose value is undefined.</li>
+<li>Number. 42 or 3.14159.</li>
+<li>String. "Howdy"</li>
+<li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+<li>and Object</li>
+</ul>
+      </section>
+      <nav id="navbar">
+        <header>JavaScript Documentation</header>
+        <a class="nav-link" href="#introduction">Introduction</a>
+        <a class="nav-link" href="#javascript_and_java">JavaScript and Java</a>
+        <a class="nav-link" href="#hello_world">Hello World</a>
+        <a class="nav-link" href="#constants">Constants</a>
+        <a class="nav-link" href="#data_types">Data Types</a>
+      </nav>
+    </main>
+    </body>  
+  </html>
